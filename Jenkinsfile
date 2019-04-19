@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'cd jenkins-maven-simple'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
