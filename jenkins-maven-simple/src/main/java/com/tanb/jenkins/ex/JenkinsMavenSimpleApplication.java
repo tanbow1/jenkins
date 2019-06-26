@@ -16,6 +16,9 @@ public class JenkinsMavenSimpleApplication {
 
     @RequestMapping("info")
     public String info() {
+        System.out.println("jenkins");
+        System.out.println("first");
+        System.out.println("My Pipeline");
         return "jenkins maven simple proj.";
     }
 }
